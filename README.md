@@ -59,9 +59,17 @@ sudo systemctl start mymonitoring.timer
 Убедитесь в успешном запуске и работе сервиса с помощью команды:
 
 ```bash
-sudo systemctl status mymonitoring
+sudo systemctl status mymonitoring.timer
 ```
 
-<img width="974" height="232" alt="image" src="https://github.com/user-attachments/assets/ee156d1d-4970-4f98-8b9d-8025b9733949" />
+<img width="2230" height="364" alt="image" src="https://github.com/user-attachments/assets/00190411-3e59-4e56-abf0-7bcec1f244a0" />
+
+Или для проверки самого сервиса:
+
+```bash
+sudo systemctl status mymonitoring.service
+```
+
+<img width="1988" height="419" alt="image" src="https://github.com/user-attachments/assets/234a69d6-2d99-4c7c-9adc-66d0bf1fbb77" />
 
 ---
