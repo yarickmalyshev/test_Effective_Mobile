@@ -1,0 +1,12 @@
+[Unit]
+Description=Таймер для вызова юнита каждую минуту.
+Requires=mymonitoring.service
+
+[Timer]
+Unit=mymonitoring.service
+OnBootSec=0
+OnUnitActiveSec=1min
+
+
+[Install]
+WantedBy=timers.target

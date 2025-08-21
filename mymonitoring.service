@@ -1,0 +1,12 @@
+[Unit]
+Description=Тестовое задание для Effective Mobile. Мониторинг процесса test.
+#Скрипту для работы необходимо интернет-соединение. Скрипт будет выполняться при запуске системы после загрузки сети.
+After=network.target
+Requires=mymonitoring.timer
+
+[Service]
+User=root
+ExecStart=/usr/local/bin/test_monitoring.sh
+
+[Install]
+WantedBy=multi-user.target
